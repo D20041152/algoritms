@@ -5,3 +5,4 @@ def bubble_sort(mas):
                 mas[j], mas[j+1] = mas[j+1], mas[j]
 
     return mas
+
