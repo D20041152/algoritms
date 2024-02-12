@@ -20,7 +20,3 @@ def shaker_sort(mas):
     start_sort += 1
     end_sort -= 1
     return mas
-
-
-mas = [4, 3, 2, 1, 5, 6, 7, 45, 32]
-print(shaker_sort(mas))
