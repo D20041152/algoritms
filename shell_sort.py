@@ -1,14 +1,12 @@
-def shell_sort(mas):
+def sheel_sort(mas):
     n = len(mas)
     step = n // 2
-
     while step > 0:
         for i in range(step, n):
-            temp = mas[i]
-            j = i
-            while j - step >= 0 and mas[j - step] > temp:
-                mas[j] = mas[j - step]
-                j -= step
-            mas[j] = temp
+            inx = i
+            while mas[inx - step] > mas[inx] and inx - step >= 0:
+                mas[inx - step], mas[inx] = mas[inx], mas[inx - step]
+                inx -= step
         step //= 2
+
     return mas
