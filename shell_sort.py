@@ -6,7 +6,7 @@ def shell_sort(mas):
         for i in range(step, n):
             temp = mas[i]
             j = i
-            while j >= step and mas[j - step] > temp:
+            while j - step >= 0 and mas[j - step] > temp:
                 mas[j] = mas[j - step]
                 j -= step
             mas[j] = temp
